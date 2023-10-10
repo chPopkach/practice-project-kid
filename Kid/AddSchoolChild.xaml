@@ -1,0 +1,44 @@
+﻿<Window x:Class="Kid.AddSchoolChild"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kid"
+        mc:Ignorable="d"
+        Title="" Height="600" Width="900" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Name="ToolBar" Grid.ColumnSpan="3" Grid.Row="0"></Grid>
+
+        <DataGrid Name="datagrid" Grid.Row="1" Grid.RowSpan="4" Grid.Column="1" AutoGenerateColumns="False" FontSize="16" ScrollViewer.CanContentScroll="True" IsReadOnly="True"/>
+
+        <Button Name="button_AddChild" Content="Добавить школьнику" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" Click="AddChild" Width="200"/>
+        <ComboBox Name="combobox_Events" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,70,0" Height="30" Width="200" FontSize="16"/>
+
+        <Label Content="Введите фамилию: " Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="200" Margin="0,0,100,10"/>
+        <TextBox Name="textbox_Surname" Grid.Row="1" HorizontalAlignment="Center" MaxLength="50" VerticalAlignment="Bottom" Height="35" Width="200" Margin="0,0,100,10" FontSize="16"/>
+        <Label Content="Введите имя: " Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="200" Margin="0,0,100,10"/>
+        <TextBox Name="textbox_Name" Grid.Row="2" HorizontalAlignment="Center" MaxLength="50" VerticalAlignment="Bottom" Height="35" Width="200" Margin="0,0,100,10" FontSize="16"/>
+        <Label Content="Введите отчество: " Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="200" Margin="0,0,100,10"/>
+        <TextBox Name="textbox_Patronymic" Grid.Row="3" HorizontalAlignment="Center" MaxLength="50" VerticalAlignment="Bottom" Height="35" Width="200" Margin="0,0,100,10" FontSize="16"/>
+        <Label Content="Введите год рождения: " Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="200" Margin="0,0,100,15"/>
+        <TextBox Name="textbox_YearBirth" Grid.Row="4" HorizontalAlignment="Center" MaxLength="50" VerticalAlignment="Bottom" Height="35" Width="200" Margin="0,0,100,10" FontSize="16"/>
+        <Label Content="Выберите пол: " Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="150" Margin="0,0,150,10"/>
+        <ComboBox Name="combobox_Gender" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="35" Width="100" Margin="0,0,200,10" FontSize="16"/>
+
+        <Button Content="Добавить" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="35" Margin="0,0,10,10" Click="Add"/>
+
+    </Grid>
+</Window>

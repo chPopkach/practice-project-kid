@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Update="AddCharterWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddEventWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddSchoolChild.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DataOutputChartersWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DataOutputWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\ToolBarWindows.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddCharterWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddEventWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddSchoolChild.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DataOutputChartersWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DataOutputWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Tools\ColorsAndStructures.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Tools\ToolBarWindows.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
